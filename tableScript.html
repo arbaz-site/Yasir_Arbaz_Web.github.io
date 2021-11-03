@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("<table border = '1px' cellspacing = 0 cellpadding = 10>")
+        var a = [
+            ["Harry", 18 , "Male", "B.Com"],
+            ["sunny", 19, "Male", "BCA"] ,
+            ["Sarah", 19, "female", "BCA"]];
+
+            document.write("<th  style='background-color:lightgreen'>");
+                document.write("Name");
+            document.write("</th>");
+            
+            document.write("<th  style='background-color:lightgreen'>");
+                document.write("Age");
+            document.write("</th>");
+
+            document.write("<th  style='background-color:lightgreen'>");
+                document.write("Gender");
+            document.write("</th>");
+
+            document.write("<th  style='background-color:lightgreen'>");
+                document.write("Class");
+            document.write("</th>");
+
+            for ( i = 0; i < 3; i++)
+            {        
+        document.write("<tr>")
+        for (p = 0; p < 4; p++)
+        {
+            document.write("<td style='background-color:lightgrey'>");
+            document.write (a [i][p]); 
+            document.write("</td>");            
+        }
+        document.write("</tr>");
+    }
+    document.write("</table>");
+    
+    </script>
+</body>
+</html>
